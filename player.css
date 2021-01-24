@@ -15,13 +15,14 @@ body{
     justify-content: flex-start;
     align-items: center;
     width:100%;
+    height: auto;
     background-color: rgb(184, 184, 184);
 }
 .container-redes-player{
     display: inline-block;
+    padding-left: 20px;
     width: auto;
     height: auto;
-    background-color: rgb(184, 184, 184);
 }
 .container-player{
     display: flex;
@@ -104,13 +105,10 @@ body{
     display: inline-block;
 }
 
-.container-redes-player{
-    margin-left: 40px;
-}
-
 .container-rede-player{
-    display: block;
-    margin: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .container-rede-player a{
@@ -118,6 +116,7 @@ body{
     color: aliceblue;
     font-weight: 10px; 
     text-align: center;
+    
 }
 
 .margin-left-right-15{
@@ -125,6 +124,15 @@ body{
     margin-right: 15px;
 }
 
+@media only screen and (max-width: 600px){
+    .container-redes-player{
+        width: 100%;
+    }
+    .container-player{
+        width: 100%;
+    }
+
+}
 
 /*input[type="range"]::-webkit-slider-thumb{
     background-color: var(--primary);
