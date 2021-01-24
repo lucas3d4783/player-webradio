@@ -1,0 +1,140 @@
+:root {
+    --primary: rgb(0, 211, 180);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    margin: 0px;
+}
+.container-main-player{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+    background-color: rgb(184, 184, 184);
+}
+.container-redes-player{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: rgb(184, 184, 184);
+}
+.container-player{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background-color: rgb(184, 184, 184);
+}
+#player{
+    display: none;
+    width: 20px;
+    background-color: var(--primary);
+}
+.container-btns{
+    width: auto;
+    padding: 5px;
+}
+.btn{
+    text-decoration: none;
+}
+.btn img{
+    width: 25px;
+}
+
+.item-container-player{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.container-music-image{
+    width: auto;
+    margin-top: 10px;
+}
+.container-music-image .music-image{
+    width: 100px;
+    border-radius: 5px;
+}
+.container-timer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.current-duration{
+    display: inline;
+    font-size: 12px;
+}
+
+#seekbar{
+    width: 250px;
+}
+
+.container-volume{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container-musica-atual{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.694);
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+}
+.container-musica-atual img{
+    display: inline-block;
+    width: 15px;
+}
+.musica-atual{
+    display: inline-block;
+}
+
+.container-redes-player{
+    margin-left: 40px;
+}
+
+.container-rede-player{
+    display: block;
+    margin: 10px;
+}
+
+.container-rede-player a{
+    margin-right: 5px;
+    color: aliceblue;
+    font-weight: 10px; 
+    text-align: center;
+}
+
+.margin-left-right-15{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/*input[type="range"]::-webkit-slider-thumb{
+    background-color: var(--primary);
+    color: aqua;
+}
+input[type="range"]::-moz-range-thumb{
+    background-color: var(--primary);  
+    color: aqua;          
+}
+input[type="range"]::-ms-thumb{
+    background-color: var(--primary);          
+    color: aliceblue;  
+}*/

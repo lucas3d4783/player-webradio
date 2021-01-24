@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>    
+    
+    <link rel="stylesheet" href="player.css">
+
+</head>
+<body>
+    <div class="container-main-player">
+        <div class="container-player" align="center">
+            <audio id="player" controls autoplay preload="auto">
+                <source src="https://r6.ciclano.io:15078/stream">
+                Seu navegador não possui suporte para esse Player.
+            </audio>
+    
+            <div class="container-music-image">
+                <img id="music-image" src="" alt="" class="music-image">
+            </div>
+        
+            <div class="item-container-player">
+                <div class="container-timer">
+                    <div id="current-duration" class="current-duration">00:00</div>
+                    <div class="range margin-left-right-15">
+                        <input type="range" min=0 id="seekbar" step=1>
+                    </div>
+                    <a href="javascript:playPause()" class="btn"> <img id="btn-play-stop" src="./icons/play.png" alt="Play"></a>
+                </div>
+            
+                <div class="container-volume">
+                    <a href="javascript:mutarDesmutar()" class="btn"> <img id="btn-mutar-desmutar" src="./icons/volume.png" alt="Play"></a>
+                    <input class="margin-left-right-15" type="range" id="range-volume" min="0" value="0.5" max="1" step="0.05" >
+                    <div id="volume-status">50%</div>
+                </div>
+            </div>
+            
+    
+            <div class="container-musica-atual" align="center">
+                <img src="./icons/music.png" alt="Música Atual">
+                <div class="musica-atual" id="musica-atual"> Carregando...</div>
+                <img src="./icons/music.png" alt="Música Atual">
+            </div>
+        </div>
+        <div class="container-redes-player">
+            <div class="container-rede-player">
+                <a href="https://facebook.com" class="btn"> <img id="btn-facebook" src="./icons/facebook.png" alt="Facebook"> Facebook </a>
+            </div>
+            <div class="container-rede-player">
+                <a href="https://instagram.com" class="btn"> <img id="btn-instagram" src="./icons/instagram.png" alt="Instagram"> Instagram </a>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+    
+
+    
+
+    <script src="player.js"></script>
+</body>
+</html>
